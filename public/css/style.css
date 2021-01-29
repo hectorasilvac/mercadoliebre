@@ -300,6 +300,10 @@ section h2 {
   justify-content: center;
 }
 
+.top-header a {
+  max-width: 50%;
+}
+
 .top-header form {
   display: flex;
   justify-content: center;
@@ -326,7 +330,7 @@ section h2 {
 .top-header img {
   animation: blinking 3s 1;
   padding: 0 0.5rem;
-  max-width: 50%;
+  width: 90%;
 }
 
 
@@ -427,6 +431,12 @@ section h2 {
     justify-content: space-between;
   }
 
+  .top-header a {
+    display: flex;
+    justify-content: center;
+    width: 24%;
+  }
+
   .top-header form {
     display: flex;
     justify-content: center;
@@ -435,7 +445,7 @@ section h2 {
   }
 
   .top-header img {
-    width: 24%;
+    width: 100%;
   }
 
   .top-header p {
@@ -472,6 +482,10 @@ section h2 {
     width: 30%;
   }
 
+  .top-header a {
+    width: 20%;
+  }
+
   .top-header form {
     display: flex;
     justify-content: center;
@@ -480,7 +494,7 @@ section h2 {
   }
 
   .top-header img {
-    width: 20%;
+    width: 90%;
   }
 
   .top-header p {
