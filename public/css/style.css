@@ -1,0 +1,481 @@
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 10px;
+
+  /* Colors */
+  --primary-color: #eac926;
+  --secondary-color: #1259c3;
+  --tertiary-color: #03264c;
+  --quaternary-color: #666;
+  --quinary-color: #ebebeb;
+  --senary-color: #39b54a;
+  /* Fonts */
+  --primary-font: "Roboto", sans-serif;
+  /* Text Size */
+  --primary-size: 1.2rem;
+  --secondary-size: 1.6rem;
+  --tertiary-size: 1.8rem;
+  --quaternary-size: 2.4rem;
+}
+
+/************************************/
+/*************** Tags ***************/
+/************************************/
+
+body {
+  background-color: white;
+  margin: 0;
+  font-family: var(--primary-font);
+  font-size: 1.2rem;
+}
+
+img {
+  width: 100%;
+}
+
+section h2 {
+  font-size: var(--quaternary-size);
+}
+
+/************************************/
+/********** Custom Classes **********/
+/************************************/
+
+.burger-menu {
+  color: white;
+  background-color: var(--secondary-color);
+  border-radius: 0.5rem;
+  padding: 1rem;
+  width: fit-content;
+  margin: 0 auto;
+}
+
+.header-content {
+  margin: 0 auto;
+  max-width: 120rem;
+  padding: 1.6rem;
+  width: 90%;
+}
+
+.header-navbar {
+  display: none;
+}
+
+.main-site {
+  background-color: var(--quinary-color);
+  overflow: hidden;
+  padding-bottom: 1.6rem;
+}
+
+.main-site section {
+  margin: 0 auto;
+  max-width: 120rem;
+  width: 90%;
+}
+
+.login-form form {
+  margin: 0 auto;
+}
+
+.login-form .form-buttons {
+  display: flex;
+  justify-content: center;
+}
+
+.login-form .form-buttons button {
+  color: white;
+  cursor: pointer;
+  background-color: var(--secondary-color);
+  border: none;
+  border-radius: 0.5rem;
+  margin-left: 1rem;
+  padding: 1rem;
+  transition: all 1s;
+  width: fit-content;
+}
+
+.login-form .form-buttons button[type=submit]:hover {
+  background-color: #001c8b;
+}
+
+.login-form form .inputs {
+  background: white;
+  border-radius: 0.4rem;
+  box-shadow: 0 1px 3px rgb(0 0 0 / 20%);
+  margin-bottom: 1.6rem;
+  padding: 1.6rem 2rem;
+}
+
+.login-form .inputs label:first-child {
+  color: var(--tertiary-color);
+  display: block;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.login-form .inputs input[type="password"] {
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: 0.1rem solid #bfbfbf;
+  padding: 0.6rem;
+  width: 100%;
+}
+
+.login-form .inputs input[type="text"] {
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: 0.1rem solid #bfbfbf;
+  padding: 0.6rem;
+  width: 100%;
+}
+
+.product-cost {
+  display: flex;
+}
+
+.product-cost p:first-child {
+  font-size: var(--tertiary-size);
+  margin: 0;
+  width: 35%;
+}
+
+.product-cost p:last-child {
+  color: var(--senary-color);
+  font-size: var(--secondary-size);
+  font-weight: bold;
+  margin: 0;
+  width: 65%;
+}
+
+.product-details {
+  border-top: 0.1rem solid var(--quinary-color);
+  padding: 1.5rem;
+}
+
+.product-details h3 {
+  font-size: var(--secondary-size);
+  display: none;
+  margin: 1.5rem 0 0 0;
+}
+
+.products-container article:hover .product-details h3 {
+  display: block;
+}
+
+.product-details i {
+  background-color: white;
+  border: 0.1rem solid var(--senary-color);
+  border-radius: 50%;
+  color: var(--senary-color);
+  padding: 0.5rem;
+  position: absolute;
+  top: 82.5%;
+  right: 2rem;
+}
+
+.products-container {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+}
+
+.products-container article {
+  background-color: white;
+  flex: 1 33rem;
+  margin: 1rem 0;
+  max-width: 33rem;
+  position: relative;
+  transition: all 500ms;
+}
+
+.products-container article:hover {
+  box-shadow: 0 0 1rem rgb(100, 100, 100);
+}
+
+
+.registration-form .form-buttons {
+  display: flex;
+  justify-content: center;
+}
+
+.registration-form .form-buttons button {
+  color: white;
+  background-color: var(--secondary-color);
+  border: none;
+  border-radius: 0.5rem;
+  margin-left: 1rem;
+  padding: 1rem;
+  width: fit-content;
+}
+
+.registration-form form {
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.registration-form form .inputs {
+  background: white;
+  border-radius: 0.4rem;
+  box-shadow: 0 1px 3px rgb(0 0 0 / 20%);
+  margin-bottom: 1.6rem;
+  padding: 1.6rem 2rem;
+}
+
+.registration-form .inputs input[type="date"] {
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: 0.1rem solid #bfbfbf;
+  padding: 0.6rem;
+  width: 100%;
+}
+
+.registration-form .inputs input[type="password"] {
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: 0.1rem solid #bfbfbf;
+  padding: 0.6rem;
+  width: 100%;
+}
+
+.registration-form .inputs input[type="text"] {
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: 0.1rem solid #bfbfbf;
+  padding: 0.6rem;
+  width: 100%;
+}
+
+.registration-form .inputs label:first-child {
+  color: var(--tertiary-color);
+  display: block;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.registration-form .inputs p {
+  margin-bottom: 1.8rem;
+}
+
+.site-footer {
+  max-width: 120rem;
+  margin: 0 auto;
+  padding: 1.6rem;
+}
+
+.site-footer p {
+  text-align: center;
+}
+
+.site-header {
+  background-color: var(--primary-color);
+  height: fit-content;
+  overflow: hidden;
+}
+
+.top-header {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+
+.top-header form {
+  display: flex;
+  justify-content: center;
+  padding: 0 0.5rem;
+  width: 50%;
+}
+
+.top-header form button {
+  background-color: white;
+  border: none;
+  border-top-right-radius: 0.4rem;
+  border-bottom-right-radius: 0.4rem;
+  padding: 0.8rem;
+}
+
+.top-header form input {
+  border: none;
+  border-top-left-radius: 0.4rem;
+  border-bottom-left-radius: 0.4rem;
+  padding: 0.8rem;
+  width: 100%;
+}
+
+.top-header img {
+  padding: 0 0.5rem;
+  max-width: 50%;
+}
+
+.top-header p {
+  font-size: var(--primary-size);
+  margin: 2rem 0;
+}
+
+.user-navbar li a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.value-proposal section {
+  margin: 0 auto;
+  max-width: 120rem;
+  padding: 1.6rem 0;
+  width: 90%;
+}
+
+.value-proposal article {
+  align-items: center;
+  display: flex;
+  flex-flow: column wrap;
+  margin: 0 auto 1rem;
+  max-width: 80%;
+}
+
+.value-proposal article h3 {
+  margin: 1rem 0 0.5rem 0;
+  text-align: center;
+}
+
+.value-proposal article p {
+  margin: 0;
+  text-align: center;
+}
+
+.value-proposal article i {
+  color: var(--secondary-color);
+  transition: all 1s;
+}
+
+.value-proposal article:hover i {
+  color: var(--senary-color);
+}
+
+@media only screen and (min-width: 768px) {
+  .burger-menu {
+    display: none;
+  }
+
+  .header-content {
+    padding: 1rem 0 0.5rem;
+  }
+
+  .header-navbar {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+  }
+
+  .header-navbar ul {
+    display: flex;
+    font-size: var(--primary-size);
+    list-style: none;
+    padding: 0;
+  }
+
+  .header-navbar ul li {
+    margin: 0 0.5rem;
+  }
+
+  .login-form form {
+    width: 50%;
+  }
+
+  .products-container article {
+    box-shadow: 0 0 1rem rgb(100, 100, 100);
+  }
+
+  .product-details h3 {
+    display: block;
+  }
+
+  .product-details i {
+    top: 76.5%;
+    right: 2rem;
+  }
+
+  .registration-form form {
+    width: 50%;
+  }
+
+  .top-header {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+  }
+
+  .top-header form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+  }
+
+  .top-header img {
+    width: 24%;
+  }
+
+  .top-header p {
+    align-self: center;
+    font-size: var(--primary-size);
+    text-align: center;
+    width: 30%;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .header-navbar {
+    margin-top: 0.8rem;
+  }
+
+  .login-form form {
+    width: 30%;
+  }
+
+  .products-container article {
+    background-color: white;
+    flex: 1 27.5rem;
+    margin: 1rem 0;
+    max-width: 27.5rem;
+    position: relative;
+  }
+
+  .product-details i {
+    top: 73%;
+    right: 2rem;
+  }
+
+  .registration-form form {
+    width: 30%;
+  }
+
+  .top-header form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 48%;
+  }
+
+  .top-header img {
+    width: 20%;
+  }
+
+  .top-header p {
+    align-self: center;
+    font-size: var(--primary-size);
+    text-align: center;
+    width: 25%;
+  }
+
+  .value-proposal {
+    display: flex;
+    flex-flow: row nowrap;
+  }
+}
