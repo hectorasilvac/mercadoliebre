@@ -22,6 +22,20 @@
 }
 
 /************************************/
+/************* Keyframes ************/
+/************************************/
+
+@keyframes blinking {
+  from {
+    opacity: 0;
+    transform: translateY(.5rem);
+  }
+  to {
+    opacity: 100%;
+  }
+}
+
+/************************************/
 /*************** Tags ***************/
 /************************************/
 
@@ -310,9 +324,11 @@ section h2 {
 }
 
 .top-header img {
+  animation: blinking 3s 1;
   padding: 0 0.5rem;
   max-width: 50%;
 }
+
 
 .top-header p {
   font-size: var(--primary-size);
