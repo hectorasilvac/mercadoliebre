@@ -50,6 +50,10 @@ img {
   width: 100%;
 }
 
+input:valid:not(input[type=search]) {
+  border-bottom: .2rem solid var(--senary-color) !important;
+}
+
 section h2 {
   font-size: var(--quaternary-size);
 }
@@ -189,7 +193,13 @@ section h2 {
   padding: 0.5rem;
   position: absolute;
   top: 82.5%;
-  right: 2rem;
+  right: 3.5rem;
+  transition: transform 500ms;
+}
+
+.products-container article:hover .product-details i {
+  top: 75.7%;
+  transform: translateX(1rem);
 }
 
 .products-container {
@@ -421,6 +431,10 @@ section h2 {
     right: 2rem;
   }
 
+  .products-container article:hover .product-details i {
+    top: 76.5%;
+  }
+
   .registration-form form {
     width: 50%;
   }
@@ -476,6 +490,10 @@ section h2 {
   .product-details i {
     top: 73%;
     right: 2rem;
+  }
+
+  .products-container article:hover .product-details i {
+    top: 73%;
   }
 
   .registration-form form {
